@@ -24,3 +24,18 @@ import time
 # Beautiful Soup Test
 # soup = BeautifulSoup("<p>Some<b>bad<i>HTML")
 # print(soup.prettify())
+
+
+# Get the URLS's
+# etherium = 'http://google.com/search?q=etherium+price'
+# url = 'http://google.com/search?q=bitcoin+' + coin + 'price'
+url = 'http://google.com/search?q=bitcoin+price'
+
+# Make  a request
+HTML = requests.get(url)
+
+# Parse!
+soup = BeautifulSoup(HTML.text, 'html.parser')
+
+# Print
+print(soup.prettify())
