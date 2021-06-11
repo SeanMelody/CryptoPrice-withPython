@@ -26,16 +26,32 @@ import time
 # print(soup.prettify())
 
 
-# Get the URLS's
-# etherium = 'http://google.com/search?q=etherium+price'
-# url = 'http://google.com/search?q=bitcoin+' + coin + 'price'
-url = 'http://google.com/search?q=bitcoin+price'
+def get_crypto_price(coin):
 
-# Make  a request
-HTML = requests.get(url)
+    # Get the URLS's
+    # etherium = 'http://google.com/search?q=etherium+price'
+    # url = 'http://google.com/search?q=bitcoin+' + coin + 'price'
+    url = 'https://coinmarketcap.com/currencies/' + coin
 
-# Parse!
-soup = BeautifulSoup(HTML.text, 'html.parser')
+    # Make  a request
+    HTML = requests.get(url)
 
-# Print
-print(soup.prettify())
+    #   Parse!
+    soup = BeautifulSoup(HTML.text, 'html.parser')
+
+    # Print
+    # print(soup.prettify())
+
+    # Find the current price
+    text = soup.find('div', attrs={'class': 'priceValue___11gHJ'}).text
+
+    # print(text)
+
+    return text
+
+
+# get the pice with a function
+price = get_crypto_price('bitcoin')
+print(price + ' US Dollars')
+
+# Create Function to show the price when it changes
