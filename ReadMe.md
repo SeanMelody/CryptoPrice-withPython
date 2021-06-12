@@ -51,3 +51,15 @@
 
   Or if you have any questions email me: 
     seandmelody@gmail.com
+    
+    
+ScreenShots:
+
+![CryptoPrice1](https://user-images.githubusercontent.com/68625400/121785934-a088e080-cb71-11eb-8e60-685e5cb2d33e.png)
+
+![CryptoPrice2](https://user-images.githubusercontent.com/68625400/121785936-a1ba0d80-cb71-11eb-9f00-e0f742819161.png)
+
+![CryptoPrice3](https://user-images.githubusercontent.com/68625400/121785937-a2eb3a80-cb71-11eb-98c6-e755e3715f4e.png)
+
+![CryptoPrice4](https://user-images.githubusercontent.com/68625400/121785940-a41c6780-cb71-11eb-85bc-6d5841bcc16a.png)
+
