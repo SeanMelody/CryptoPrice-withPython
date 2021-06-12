@@ -51,7 +51,17 @@ def get_crypto_price(coin):
 
 
 # get the pice with a function
-price = get_crypto_price('bitcoin')
-print(price + ' US Dollars')
+# price = get_crypto_price('bitcoin')
+# print(price + ' US Dollars')
 
+users_coin = input("Which coin price would you like?: ")
+print_price = get_crypto_price(users_coin)
+print(print_price)
 # Create Function to show the price when it changes
+
+
+def loop():
+    last_price = -1
+    # Loop to continulously show the price
+    # while True:
+    # pick a coin:
