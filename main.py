@@ -29,9 +29,9 @@ import inquirer
 
 def get_crypto_price(user_selected):
 
-    print(user_selected)
+    # print(user_selected)
     coin = user_selected['crypto']
-    print(coin)
+    print('One ' + coin + ' costs:')
 
 # Get the URLS's
 # etherium = 'http://google.com/search?q=etherium+price'
@@ -66,8 +66,8 @@ def get_crypto_price(user_selected):
 
 crypto_options = [inquirer.List('crypto',
                                 message="What coin price would you like to check?: ",
-                                choices=['Bitcoin', 'Ethereum', 'Tether', 'Binance',
-                                         'Cardano', 'Dogecoin', 'XRP', 'USD', 'Polkadot', 'Uniswap']
+                                choices=['Bitcoin', 'Ethereum', 'Tether', 'Cardano', 'Dogecoin',
+                                         'XRP', 'Polkadot', 'Uniswap', 'Litecoin', 'Solana']
                                 )
                   ]
 user_selected = inquirer.prompt(crypto_options)
