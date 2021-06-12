@@ -67,7 +67,7 @@ def get_crypto_price(user_selected):
 crypto_options = [inquirer.List('crypto',
                                 message="What coin price would you like to check?: ",
                                 choices=['Bitcoin', 'Ethereum', 'Tether', 'Cardano', 'Dogecoin',
-                                         'XRP', 'Polkadot', 'Uniswap', 'Litecoin', 'Solana']
+                                         'XRP', 'Polkadot', 'Uniswap', 'Litecoin', 'Solana', 'Filecoin']
                                 )
                   ]
 user_selected = inquirer.prompt(crypto_options)
